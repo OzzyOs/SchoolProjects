@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html langtype=NL>
+<head>
+    <meta charset="UTF-8">
+    <Title>Home</Title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    padding: 0px 187px 0px 187px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #395949;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #333;
+}
+
+.dropdown-content a:hover {background-color: #7b9085}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="Websitecss.css">
+</head>
+<body>
+<h1><img src="C:\Users\Joshua\Desktop\music1.jpg" style="width: 350px; height: 123px;">BEATS BY RAY</h1> 
+
+<ul>
+<li><a href="Homepage.html">Home</a></li>
+  <li class="dropdown">
+      <a href="#" class="dropbtn">Speakers</a>
+      <div class="dropdown-content">
+          <a href="sonosspeaker.html">PLAY:1 Sonos </a>
+   <li class="dropdown">
+      <a href="#portables" class="dropbtn">Portables</a>
+      <div class="dropdown-content">
+          <a href="play5.html">PLAY:5 Sonos </a>
+   <li class="dropdown">
+      <a href="#soundbars" class="dropbtn">Soundbars</a>
+      <div class="dropdown-content">
+          <a href="sharpsoundbar.html">HT-SL50 Sharp Soundbar</a>
+</ul>
+
+<br></br>
+
+<h3><font color="#395949">Rays Unique Design</font></h3>
+<p>Order the unique audio-extention equipment from Beats by Ray, developed by two application students from Rotterdam for your amusement.</p>
+<p><strong><u>Our products are only available trough personalized orders via e-mail or telephone and will need to be picked up from one of our stores located in different cities.<strong></u></p>
+
+<form>
+    <div style="width: 500px;">
+	<form action="mailto:joshua_159@hotmail.com" method="POST" enctype="text/plain">
+	
+
+	
+
+	
+	<fieldset id=persoon>
+	
+	<legend><strong>My information</strong></legend>
+	
+	<input id=heer name=aanspreking type=radio value=mijnheer>
+	<label for=heer>Mr.</label>
+	
+	<input checked id=mevoeuw name=aanspreking type=radio value=mevrouw>
+	<label for=mevrouw>Mrs</label>
+	
+	<br>
+	
+	<label for=naam>First- and Last name</label>
+	<input id=naam maxlength=90 name=naam size=30 type=text
+	placeholder="First Last name">
+	
+	<br>
+	<label for=mail>E-mailadres</label>
+	<input id=mail name=mail type=email placeholder=E-mailadres>
+	
+	
+	</fieldset>
+
+	<fieldset id=reactiesoort>
+	
+	<legend><strong>About</strong></legend>
+	<p>Tel: 0104586141</p>
+    <p>Once an order or request has been made you will be contacted via e-mail or telephone</p>
+	<select id=soort name=soort>
+		<option disabled>Choose</option>
+		<option>I would like to request an order.</option>
+		<option>I have a question about your products.</option>
+        <option>I would like to know the product price details.</option>
+	</select>
+	
+	</fieldset>
+	
+	<fieldset id=reactie>
+	<legend><strong>Extra Comments</strong></legend>
+	
+	<textarea id=invul name=invul cols=50 rows=4></textarea>
+	
+	</fieldset>
+	
+	<fieldset id=klaar>
+
+		<legend><strong>Confirm</strong></legend>
+		<input id=zend type=submit value=Send>
+	
+	</fieldset>
+	
+	
+	</div>
+	
+	</form>
+
+
+</body>
+</html>
+
